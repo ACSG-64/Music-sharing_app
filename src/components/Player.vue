@@ -20,7 +20,8 @@
         >
           <span class="song-title">
             {{ currentSong.modified_name }}</span>
-          <span class="song-artist">- shared by {{ currentSong.display_name }}</span>
+          <span class="song-artist"> <i> -
+            {{ $tc('author_label', {author: currentSong.display_name}) }}</i></span>
         </div>
         <!-- Scrub Container  -->
         <span class="block w-full h-2 rounded m-1 mt-2 bg-gray-200 relative cursor-pointer"

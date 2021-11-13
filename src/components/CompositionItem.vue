@@ -17,7 +17,9 @@
       </div>
       <vee-form :validation-schema="schema" :initial-values="song" @submit="edit">
         <div class="mb-3">
-          <label class="inline-block mb-2">Song Title</label>
+          <label class="inline-block mb-2">
+            {{ $t('edit_song_form.song_title') }}
+          </label>
           <vee-field type="text" name="modified_name"
                      class="block w-full py-1.5 px-3 text-gray-800 border border-gray-300
                         transition duration-500 focus:outline-none focus:border-black rounded"
@@ -27,7 +29,9 @@
           <ErrorMessage class="text-red600" name="modified_name"/>
         </div>
         <div class="mb-3">
-          <label class="inline-block mb-2">Genre</label>
+          <label class="inline-block mb-2">
+            {{ $t('edit_song_form.song_genre') }}
+          </label>
           <vee-field type="text" name="genre"
                      class="block w-full py-1.5 px-3 text-gray-800 border border-gray-300
                         transition duration-500 focus:outline-none focus:border-black rounded"
@@ -38,11 +42,11 @@
         </div>
         <button type="submit" class="py-1.5 px-3 rounded text-white bg-green-600"
                 :disabled="in_submission">
-          Submit
+          {{ $t('form.submit') }}
         </button>
         <button type="button" class="py-1.5 px-3 rounded text-white bg-gray-600"
                 :disabled="in_submission" @click.prevent="showForm = false">
-          Go Back
+          {{ $t('form.go_back') }}
         </button>
       </vee-form>
     </div>

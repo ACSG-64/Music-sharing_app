@@ -7,7 +7,7 @@
         {{ song.modified_name }}
       </router-link>
       <span class="text-gray-500 text-sm">
-        Published by {{ song.display_name }}
+        {{ $tc('author_label', {author: song.display_name}) }}
       </span>
     </div>
 
