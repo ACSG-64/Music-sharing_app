@@ -183,12 +183,9 @@ export default {
       }
     },
   },
-  async created() {
-    const docSnapshot = await songsCollection.doc(`${this.$route.params.id}`).get();
-
-    if (!docSnapshot.exists) {
-      await this.$router.push({ name: 'home' });
-      return;
+  created() {
+    if (this.currentSong.url === this.song.url) {
+      this.playingSong = this.playing;
     }
 
     const { commentSort } = this.$route.query;
@@ -196,14 +193,21 @@ export default {
     if (commentSort === 'ASC' || commentSort === 'DESC') {
       this.commentSort = commentSort;
     }
+  },
+  async beforeRouteEnter(to, from, next) {
+    const docSnapshot = await songsCollection.doc(`${to.params.id}`).get();
 
-    this.song = docSnapshot.data();
+    next((vm) => {
+      if (!docSnapshot.exists) {
+        vm.$router.push({ name: 'home' });
+        return;
+      }
 
-    if (this.currentSong.url === this.song.url) {
-      this.playingSong = this.playing;
-    }
+      // eslint-disable-next-line no-param-reassign
+      vm.song = docSnapshot.data();
 
-    this.getComments();
+      vm.getComments();
+    });
   },
 };
 </script>
