@@ -9,5 +9,12 @@ module.exports = {
       compositionOnly: true,
       fullInstall: true,
     },
+    pwa: {
+      name: 'Music app',
+      themeColor: '#ff53a',
+      manifestOptions: {
+        short_name: 'Music app',
+      },
+    },
   },
 };
