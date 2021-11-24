@@ -1,3 +1,4 @@
 # Music sharing app
-A music sharing application developed in Vue and Firebase.
-### Note: the website design was created by the ZTM team, not by me.
+A music sharing web application developed in Vue and Firebase as a backend.
+### Demo: https://musicloud.acsg.repl.co/
+#### Note: the website design was created by the ZTM team.
