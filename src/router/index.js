@@ -2,7 +2,6 @@ import { createRouter, createWebHistory } from 'vue-router';
 import store from '@/store';
 
 const Home = () => import('@/views/Home.vue');
-const About = () => import('@/views/About.vue');
 const Manage = () => import(/* webpackChunkName: "groupedChunk" */ '@/views/Manage.vue');
 const Song = () => import(/* webpackChunkName: "groupedChunk" */ '@/views/Song.vue');
 
@@ -11,11 +10,6 @@ const routes = [
     name: 'home',
     path: '/',
     component: Home,
-  },
-  {
-    name: 'about',
-    path: '/about',
-    component: About,
   },
   {
     name: 'manage',
