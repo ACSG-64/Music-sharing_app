@@ -1,0 +1,48 @@
+{
+  "author_label": "Compartido por {author}",
+  "edit_song_form": {
+    "song_genre": "Género",
+    "song_title": "Título de la canción"
+  },
+  "form": {
+    "go_back": "Salir",
+    "submit": "Enviar"
+  },
+  "header": {
+    "logout": "Cerrar sesión",
+    "manage": "Administrar",
+    "sign_in": "Entrar / Registrarse"
+  },
+  "home": {
+    "paragraph": "Comparte música con el resto de usuarios y escúchala sin tener que descargar nada. ¡Un deleite musical de distintos géneros géneros en un solo lugar!",
+    "title": "¡Escucha música genial!"
+  },
+  "login_form": {
+    "email_label": "Correo electrónico",
+    "password_label": "Contraseña",
+    "submit": "Ingresar"
+  },
+  "register": {
+    "TOS": "Términos de Servicio",
+    "accept_TOS": "Acepto los {0}"
+  },
+  "register_form": {
+    "age_label": "Edad",
+    "conf_password_label": "Confirmar contraseña",
+    "country_label": "País",
+    "email_label": "Correo electrónico",
+    "name_label": "Nombre",
+    "password_label": "Contraseña",
+    "select_country_option": "Selecciona un país"
+  },
+  "song": {
+    "comment_count": "No hay comentarios | 1 Comentario | {count} Comentarios",
+    "sort_comments_latest": "Más recientes",
+    "sort_comments_oldest": "Más antiguos"
+  },
+  "songs_label": "Canciones",
+  "upload": {
+    "upload": "Cargar",
+    "upload_holder": "Suelta tus archivos aquí"
+  }
+}

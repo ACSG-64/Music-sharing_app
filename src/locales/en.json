@@ -1,0 +1,47 @@
+{
+  "author_label": "Shared by {author}",
+  "edit_song_form": {
+    "song_genre": "Genre",
+    "song_title": "Song title"
+  },
+  "form": {
+    "go_back": "Go Back",
+    "submit": "Submit"
+  },
+  "header": {
+    "logout": "Logout",
+    "manage": "Manage",
+    "sign_in": "Login / Register"
+  },
+  "home": {
+    "paragraph": "Share music with other users and listen to it without having to download anything. A musical delight of different genres in one place!",
+    "title": "Listen to Great Music!"
+  },
+  "login_form": {
+    "email_label": "Email",
+    "password_label": "Password"
+  },
+  "register": {
+    "TOS": "Terms of Service",
+    "accept_TOS": "I accept the {0}"
+  },
+  "register_form": {
+    "age_label": "Age",
+    "conf_password_label": "Confirm password",
+    "country_label": "Country",
+    "email_label": "Email",
+    "name_label": "Name",
+    "password_label": "Password",
+    "select_country_option": "Select a country"
+  },
+  "song": {
+    "comment_count": "No comments | 1 Coment | {count} Coments",
+    "sort_comments_latest": "Latest",
+    "sort_comments_oldest": "Oldest"
+  },
+  "songs_label": "Songs",
+  "upload": {
+    "upload": "Upload",
+    "upload_holder": "Drop your files here"
+  }
+}
